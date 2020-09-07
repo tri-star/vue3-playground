@@ -14,7 +14,8 @@ module.exports = (env = {}) => ({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-    }
+    },
+    extensions: [".ts", ".vue", ".js"]
   },
   module: {
     rules: [
