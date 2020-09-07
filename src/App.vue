@@ -1,6 +1,7 @@
 <template>
-  <h1>Hello Vue 3!</h1>
-  <button @click="inc">Clicked {{ count }} times.</button>
+  <div>
+    <router-view/>
+  </div>
 </template>
 
 <script lang="ts">
@@ -20,9 +21,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-img {
-  width: 200px;
-}
 h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
