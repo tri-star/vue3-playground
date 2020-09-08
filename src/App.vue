@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link :to="{ path: '/' }">Home</router-link>
     <router-view/>
   </div>
 </template>

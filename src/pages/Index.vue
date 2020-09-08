@@ -2,7 +2,7 @@
   <div>
     <h1>Menu</h1>
     <ul>
-      <li><router-link :to="{ path: '/' }">test</router-link></li>
+      <li><router-link :to="{ path: '/Object' }">Object</router-link></li>
     </ul>
   </div>
 </template>
