@@ -13,6 +13,10 @@
     <button @click="addTag()">add tag</button>
   </div>
   <div class="row">
+    <p>Change</p>
+    <button @click="changeUser()">change user</button>
+  </div>
+  <div class="row">
     <p>Dump</p>
     <p>{{ user }}</p>
   </div>
@@ -52,15 +56,21 @@ export default defineComponent({
 
   setup() {
 
-    const user: User = reactive(new User)
+    let user: User = reactive(new User)
 
     const addTag = () => {
       user.tags.push('aaa')
     }
+    const changeUser = () => {
+      const user2:User = new User()
+      user2.name = 'user2'
+      user.name = user2.name
+    }
     
     return {
       user,
-      addTag
+      addTag,
+      changeUser
     }
   }
 
