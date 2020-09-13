@@ -3,7 +3,8 @@
     <h1>Menu</h1>
     <ul>
       <li><router-link :to="{ path: '/Object' }">Object</router-link></li>
-      <li><router-link :to="{ path: '/form' }">FormContainer</router-link></li>
+      <li><router-link :to="{ path: '/form-emit' }">FormContainer(emit)</router-link></li>
+      <li><router-link :to="{ path: '/form-provider' }">FormContainer(Provider)</router-link></li>
       <li>Suspense</li>
       <li>Effect</li>
       <li>Computed</li>
