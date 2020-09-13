@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Index from './pages/Index.vue'
 import ObjectPage from './pages/ObjectPage.vue'
-import FormContainer from './pages/FormContainer.vue'
+import FormContainer from './pages/form-emit/FormContainer.vue'
 
 export const routerHistory = createWebHistory()
 

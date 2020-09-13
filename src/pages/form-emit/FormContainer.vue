@@ -11,7 +11,7 @@
 <script>
 import { defineComponent, reactive, ref } from "vue";
 import Form from './Form'
-import { User } from '../domain/User'
+import { User } from '@/domain/User'
 
 export default defineComponent({
   components: {

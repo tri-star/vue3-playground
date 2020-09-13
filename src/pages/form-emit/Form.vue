@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { computed, defineComponent } from "vue";
-import { User } from '../domain/User'
+import { User } from '@/domain/User'
 
 export default defineComponent({
 
