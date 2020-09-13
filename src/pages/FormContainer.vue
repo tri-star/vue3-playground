@@ -1,6 +1,6 @@
 <template>
 <div>
-  <Form :user="user"/>
+  <Form :user="user" @update="updateUserHandler"/>
   <div>
     <p>Container side user:</p>
     {{ user }}
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { defineComponent, reactive } from "vue";
+import { defineComponent, reactive, ref } from "vue";
 import Form from './Form'
 import { User } from '../domain/User'
 
@@ -20,9 +20,14 @@ export default defineComponent({
   setup() {
 
     const user = reactive(new User())
+    // この方法だと型で制限できない
+    const updateUserHandler = (payload) => {
+      user[payload.key] = payload.value
+    }
 
     return {
-      user
+      user,
+      updateUserHandler
     }
   }
 
