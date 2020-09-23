@@ -3,6 +3,7 @@ import Index from './pages/Index.vue'
 import ObjectPage from './pages/ObjectPage.vue'
 import FormContainer from './pages/form-emit/FormContainer.vue'
 import FormProviderContainer from './pages/form-provider/FormProviderContainer.vue'
+import StoreSampleForm from './pages/store/StoreSampleForm.vue'
 
 export const routerHistory = createWebHistory()
 
@@ -29,6 +30,11 @@ export const route = createRouter({
       path: '/form-provider',
       name: 'form-provider',
       component: FormProviderContainer
+    },
+    {
+      path: '/store',
+      name: 'store',
+      component: StoreSampleForm
     }
 
   ]
