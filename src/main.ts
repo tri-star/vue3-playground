@@ -1,9 +1,5 @@
 import { createApp } from 'vue'
+import './style.css'
 import App from './App.vue'
-import {route} from './routes'
-import { ServiceProvider } from './ServiceProvider'
 
-const app = createApp(App).use(route)
-ServiceProvider.boot(app)
-
-app.mount('#app')
+createApp(App).mount('#app')
