@@ -35,6 +35,10 @@ module.exports = {
 
 ```json
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "eslint.validate": ["javascript", "javascriptreact", "vue"]
 }
 ```
